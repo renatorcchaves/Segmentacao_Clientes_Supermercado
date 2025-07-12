@@ -36,20 +36,21 @@ Abaixo será detalhado as etapas e considerações a respeito desse projeto de c
 <div align="center"> <img src="relatorios/Boxplot dos Clusters - Idade - Renda - Score.png" title="Boxplot" height="600"/> </div>
 
 
-Cada cluster pode ser dividido da seguinte maneira:
+## Definição dos Clusters
 
 | Pontuação de Gastos | Renda | Idade | Cluster |
 |---------------------|-------|-------|---------|
-| Moderada                | Moderada  | Adultos/Idosos | 0       |
-| Moderada            | Moderada | Jovens/Adultos | 1       |
-| Baixa                | Alta | Adultos | 2       |
-| Alta               | Baixa  | Jovens | 3       |
-| Alta            | Alta | Jovens/Adultos | 4       |
+| Alta                | Alta  | Jovem/Adulto | 0       |
+| Moderada            | Moderada | Adulto/Idoso | 1       |
+| Alta                | Baixa | Jovem | 2       |
+| Baixa               | Alta  | Adulto | 3       |
+| Moderada            | Moderada | Jovem/Adulto | 4       |
 
-- Por fim o dataframe original com a coluna à qual cada cliente pertence foi extraído e pode ser verificado na pasta dados, com nome [Mall_Customers_clustered](dados/Mall_Customers_clustered.csv)
+- Por fim o dataframe original com a coluna à qual cada cliente pertence foi extraído e pode ser verificado na pasta "dados", com nome [Mall_Customers_clustered](dados/Mall_Customers_clustered.csv)
 - Caso queiram consultar o modelo criado nesse projeto, os mesmos se encontram na pasta "modelos", podendo ser encontrado o [Modelo de Clusterização sem PCA](modelos/pipeline_preprocessamento_clustering.pkl) e [Modelo de Clusterização com PCA](modelos/pipeline_preprocessamento_pca_clustering.pkl)
 
-## Organização do projeto
+
+## Organização de pastas e arquivos projeto
 
 ```
 ├── .env               <- Arquivo de variáveis de ambiente (não versionar)
